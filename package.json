@@ -1,7 +1,7 @@
 {
-  "name": "RioRewrite",
+  "name": "BabyRio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Baby Rio Bot | Helps out with Goli Network Discord",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.5.1",
-    "djs-commands": "^1.2.2"
+    "djs-commands": "^1.2.2",
+    "minecraft-api": "0.0.2",
+    "minecraft-skin": "^0.1.2"
   }
 }
