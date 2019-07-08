@@ -15,6 +15,10 @@ Shows how long the bot has been online for (ALIAS: +ontime)
 Shows Bot Ping & API Latency (ALIAS: +latency)
 ### +avatar
 Shows your avatar (ALIAS: +ava)
+### +howgay
+Shows a random number from 1-100 of how "gay" you are
+###  +8ball
+Acts as an 8 Ball
 
 ## Ori Only Commands
 Shows a list of all the current commands that only I can do
@@ -39,7 +43,3 @@ Play a game of Minesweeper on Discord
 Shows your Minecraft Skin
 ### +status (ip)
 Shows the status of a Minecraft Server or Website
-### +howgay
-Shows a random number from 1-100 of how "gay" you are
-###  +8ball
-Acts as an 8 Ball
