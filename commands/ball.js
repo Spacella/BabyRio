@@ -19,7 +19,7 @@ const eightball = [
     ":8ball: My reply is no",
     ":8ball: My sources say no.",
     ":8ball: Outlook no so good.",
-    ":8ball: Very doubtful"
+    ":8ball: Very doubtful."
 ];
 module.exports = class ball {
     constructor(){

@@ -26,7 +26,6 @@ module.exports = class Rio {
         embed.setColor(0xF08080)
         embed.setThumbnail(`${message.author.avatarURL}`)
         embed.setFooter(`Requested by: ${message.author.tag}`)
-        embed .setImage("https://cdn.discordapp.com/attachments/568862020594565130/580826398193614858/GoliLogo.png")
         embed.setTimestamp()
 
         message.channel.send(embed);
