@@ -1,0 +1,18 @@
+EMBED THINGS:
+----------------
+    embed.setAuthor
+    embed.setColor
+    embed.setDescription
+    embed.setFooter
+    embed.setImage
+    embed.setThumbnail
+    embed.setTimestamp
+    embed.setTitle
+    embed.setURL
+    embed.addBlankField
+    embed.addField
+----------------
+
+Images:
+Goli Logo
+(https://cdn.discordapp.com/attachments/568862020594565130/580826398193614858/GoliLogo.png)

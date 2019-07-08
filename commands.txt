@@ -1,0 +1,14 @@
+const Discord = require("discord.js");
+
+module.exports = class announcement {
+    constructor(){
+        this.name = 'announcement',
+        this.alias = ['announce'],
+        this.usage = '+announcement'
+    }
+
+    run(bot, message, args){
+        message.channel.send('message')
+    message.delete();
+    }
+}
