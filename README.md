@@ -1,42 +1,45 @@
 # Baby Rio Bot | Custom Discord bot made for Goli Network Discord
 
-## Info
+# Info
 Prefix: +
 Library: discord.js
 Author: Ori#0004
 
 ## Commands
-# +rhelp
+Shows the public commands
+### +rhelp
 Main Menu, Shows Bot Version, Library. Author, Amount of users using Baby Rio
-# +uptime
+### +uptime
 Shows how long the bot has been online for (ALIAS: +ontime)
-# +ping
+### +ping
 Shows Bot Ping & API Latency (ALIAS: +latency)
-# +avatar
+### +avatar
 Shows your avatar (ALIAS: +ava)
 
 ## Ori Only Commands
-# +announcement
+Shows a list of all the current commands that only I can do
+### +announcement
 Announcement message for Rio Bot - Basically just prints out announcement messages (ALIAS: +announce)
-# +dndmode
+### +dndmode
 Sets the bots status to Do Not Disturb (Changes from Online Mode to DND) (ALIAS: +dnd)
-# +idlemode
+### +idlemode
 Sets the bots status to Idle/Away (Changes from Online Mode to Away) (ALIAS: +idle)
-# +onmode
+### +onmode
 Sets the bots status to Online (Only works if bot status is DND or Idle) (ALIAS: +online)
 
 ## Coming Soon
-# +su
+Shows a list of all the commands I will be working on adding
+### +su
 Suggestion command for Goli Network
-# +br
+### +br
 Bug Report command for Goli Network
-# +minesweeper
+### +minesweeper
 Play a game of Minesweeper on Discord
-# +skin
+### +skin
 Shows your Minecraft Skin
-# +status (ip)
+### +status (ip)
 Shows the status of a Minecraft Server or Website
-# +howgay
+### +howgay
 Shows a random number from 1-100 of how "gay" you are
-#  +8ball
+###  +8ball
 Acts as an 8 Ball
