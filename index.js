@@ -20,7 +20,9 @@ bot.on('ready', () => {
 bot.on('message', (message) => {
     if(message.channel.type === 'dm') return;
     if(message.author.type === 'bot') return;
-    let args = message.content.split(" ");
+//    let args = message.content.split(" ");
+    let args = message.content.split(/ +/g);
+    let suffix = args.slice(1).join(' ');
     let command = args[0];
     let cmd = CH.getCommand(command);
     if(!cmd) return;
