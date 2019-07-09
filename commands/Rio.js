@@ -3,12 +3,12 @@ const botVersion = '1.0';
 
 module.exports = class Rio {
     constructor(){
-        this.name = 'Rio',
+        this.name = 'rio',
         this.alias = ['rhelp']
         this.usage = 'rio'
     }
 
-    run(bot, message, args){
+    run(bot, wmessage, args){
         let embed = new Discord.RichEmbed();
         
         embed.setTitle('-=[Rio Rewrite Bot]=-')
