@@ -9,19 +9,19 @@ module.exports = class suggestion {
 
     run(bot, message, args){
         let embed = new Discord.RichEmbed()
-        let sugg = args[0];
-         embed.setAuthor('New Suggestion')
          embed.setTitle(`Upvote | Downvote`)
          embed.setColor(0xF08080)
          embed.setDescription('Suggest features to our server with:\n `+su <suggestion>`')
          embed.setThumbnail(`${message.author.avatarURL}`)
          embed.addBlankField(true)
          embed.addField('**Suggestion**',
-         `${sugg}`)
-         embed.addField('**Suggestion by:',
+         `${message.author.lastMessage}`)
+         embed.addField('**Suggestion by:**',
          `<@${message.author.id}>`)
 
-         message.channel.send(embed)
+         bot.channels.get("574366597515444244").send(embed).then(x=> x.react('597942179838558210').then(x.react('597942166517710868')))
          message.delete();
+         }
     }
-}
+// Yes: 597942179838558210
+// No: 597942166517710868
