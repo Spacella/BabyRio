@@ -5,20 +5,49 @@ Prefix: +
 Library: discord.js
 Author: Ori#0004
 
-## Commands
+## Cmds
 Shows the public commands
 ### +rhelp
-Main Menu, Shows Bot Version, Library. Author, Amount of users using Baby Rio
+Main Menu, Shows Bot Version, Library. Author, Amount of users using Baby Rio.
 ### +uptime
-Shows how long the bot has been online for (ALIAS: +ontime)
+Shows how long the bot has been online for. (ALIAS: +ontime)
 ### +ping
-Shows Bot Ping & API Latency (ALIAS: +latency)
+Shows Bot Ping & API Latency. (ALIAS: +latency)
 ### +avatar
-Shows your avatar (ALIAS: +ava)
+Shows your avatar. (ALIAS: +ava)
 ### +howgay
-Shows a random number from 1-100 of how "gay" you are
-###  +8ball
-Acts as an 8 Ball
+Shows a random number from 1-100 of how "gay" you are. (ALIAS: +)
+###  +ball
+Acts as an 8 Ball. (ALIAS: <NONE>)
+### +perhaps
+Displays the perhaps cow. (ALIAS: +p)
+### +tom
+Displays the unsettled tom image. (ALIAS: +<NONE>)
+### +puppy
+Gives you a picture of a cute dog. :3 (ALIAS: +dog, +doggo, )
+### +rsu
+Use to suggest a feature to Baby Rio Bot, It will DM me with whatever command you typed so that I can read it. :D
+
+## Goli Network Help Commands
+### +su
+Suggestion feature for the server.
+### +br
+Bug Report feature for the server.
+### +git
+GitHub page for me & my manager.
+### +one, +two, +three
+Displays the links that surround the website. (Ori Only)
+### +website
+Displays Goli Network Website
+
+
+## VC Commands
+### +vc
+Allows Baby Rio to join the VC.
+### +dhorn
+Makes Baby Rio play a Dixie Horn sound
+### +lvc
+Makes Baby Rio leave the VC
 
 ## Ori Only Commands
 Shows a list of all the current commands that only I can do
@@ -30,16 +59,24 @@ Sets the bots status to Do Not Disturb (Changes from Online Mode to DND) (ALIAS:
 Sets the bots status to Idle/Away (Changes from Online Mode to Away) (ALIAS: +idle)
 ### +onmode
 Sets the bots status to Online (Only works if bot status is DND or Idle) (ALIAS: +online)
+### +brformat
+Displays a help page for how to use "+br" command.
+### +sugf
+Displays a help page for how to use "#+su" command.
+
 
 ## Coming Soon
 Shows a list of all the commands I will be working on adding
-### +su
-Suggestion command for Goli Network
-### +br
-Bug Report command for Goli Network
 ### +minesweeper
 Play a game of Minesweeper on Discord
 ### +skin
 Shows your Minecraft Skin
 ### +status (ip)
 Shows the status of a Minecraft Server or Website
+### +meme
+(displays a good ol' meme)
+### +lizard
+Displays some cute lizards.
+
+### A leveling up feature
+I will be slowly working to make a feature with the bot where it will allow the players in my discord server to level up, this will be in the same style as Mee6 Bot. My goal is to make a functioning bot that does everything that mee6, dyno, rythm, etcetera; can do.
