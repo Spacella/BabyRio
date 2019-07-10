@@ -16,7 +16,7 @@ module.exports = class uptime {
             totalSeconds %= 3600;
             let minutes = Math.floor(totalSeconds / 60);
             let seconds = totalSeconds % 60;
-            seconds.toFixed(2);
+            seconds = seconds.toFixed(2);
             
             embed.setFooter(`Requested by ${message.author.tag}`)
             embed.setTimestamp()

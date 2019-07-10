@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-let prefix = '+';
 
 module.exports = class trial {
     constructor(){
@@ -10,7 +9,7 @@ module.exports = class trial {
 
     run(bot, message, args){
         let embed = new Discord.RichEmbed()
-        let suggestion = args[0];
+        var suggestion = args[0];
          embed.setTitle(`Upvote | Downvote`)
          embed.setColor(0xF08080)
          embed.setDescription('Suggest features to our server with:\n `+su <suggestion>`')
@@ -22,7 +21,6 @@ module.exports = class trial {
          `<@${message.author.id}>`)
 
          bot.channels.get("577491181697630244").send(embed).then(x=> x.react('597942179838558210').then(x.react('597942166517710868')))
-         message.delete();
          }
     }
 // Yes: 597942179838558210
