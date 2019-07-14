@@ -2,24 +2,24 @@ const Discord = require("discord.js");
 const randomPuppy = require('random-puppy');
 const snekfetch = require('snekfetch')
 
-module.exports = class memes {
+module.exports = class reptile {
     constructor(){
-        this.name = 'meme',
-        this.alias = ['me-me'],
-        this.usage = 'meme'
+        this.name = 'reptile',
+        this.alias = ['lizard', 'snake'],
+        this.usage = 'reptile'
     }
     run(bot, message, args){
 
         let reddit = [
-            "memes",
-            "wholesomememes",
-            "dankmemes",
-            "whoooosh"
+            "Lizards",
+            "reptiles",
+            "snakes",
+            "Sneks"
         ]
 
         let subreddit = reddit[Math.floor(Math.random() * reddit.length - 1)];
 
-        message.channel.send('Here is the meme you requested <:Pan_Love:586613821418897408>')
+        message.channel.send('Here\'s your Reptiles! <:RioHug:591102792207433729>')
         message.channel.startTyping()
 
         randomPuppy(subreddit).then(url=> {
@@ -27,7 +27,7 @@ module.exports = class memes {
                 await message.channel.send({
                     files: [{
                         attachment: res.body,
-                        name: 'meme.png'
+                        name: 'lizard.png'
                     }]
                 }).then(() => message.channel.stopTyping());
             }).catch(err => console.error(err));

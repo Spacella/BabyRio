@@ -10,9 +10,11 @@ module.exports = class suggestion {
     run(bot, message, args){
         let embed = new Discord.RichEmbed()
         //suggestion variables
+
         var command = args[0];
         var suggestion = args.slice(1).join(" ");
         //Embed
+        
          embed.setTitle(`Upvote | Downvote`)
          embed.setColor(0xF08080)
          embed.setDescription('Suggest features to our server with:\n `+su <suggestion>`')

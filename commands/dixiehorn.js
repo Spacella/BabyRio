@@ -13,7 +13,7 @@ module.exports = class dhorn {
         if (message.member.voiceChannel) {
             message.member.voiceChannel.join().then(connection => {
                 connection.playFile('C:/Users/epics/Desktop/Bots/sounds/dixie-horn_daniel-simion.mp3');
-                message.channel.send('Hehe :wink:')
+                message.channel.send('Playing: Dixie Horn Sound')
                 message.delete();
             })
         }

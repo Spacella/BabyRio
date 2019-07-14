@@ -4,17 +4,30 @@ module.exports = class announcement {
     constructor(){
         this.name = 'announcement',
         this.alias = ['announce'],
-        this.usage = '+announcement'
+        this.usage = 'announcement'
     }
 
     run(bot, message, args){
+        let embed = new Discord.RichEmbed()
+        //announcment variables
+        var command = args[0];
+        var ann = args.slice(1).join(" ");
+
+        embed.setAuthor('New Server Announcement')
+        embed.setDescription(`${ann}`)
+        embed.setFooter(`Announcement by: ${message.author.tag}`)
+        embed.setTimestamp()
+        embed.setImage('https://cdn.discordapp.com/attachments/568862020594565130/580826398193614858/GoliLogo.png')
+        embed.setColor(0xF08080)
+
+        if (message.guild.id === '505872328538718233')
         if (message.author.id === '345406020450779149')
-        message.channel.send('Hey Everyone! *wave*\n \nAnnouncementMessage')
-    message.delete();
+        bot.channels.get("577491181697630244").send('Hey @everyone <:Bri_Wave:579035075102900229>').then(message.channel.send(embed).then(x=> x.react('586613821418897408')))
+        message.delete()
     }
 }
 /*
-Emotes for Announcements, ignore this :)
+Emojis, ignore this :)
 <:thonk:568875386243514398>
 <:RioHug:591102792207433729>
 <:PanWot:589141480501805240>

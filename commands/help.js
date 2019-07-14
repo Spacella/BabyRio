@@ -13,6 +13,7 @@ module.exports = class rio {
         
         embed.setTitle('-=[Baby Rio Bot]=-')
         embed.setAuthor('Rio Info', `${bot.user.avatarURL}`)
+        embed.setDescription('**Type** `+cmds` **for the command list**')
         embed.addField('Baby Rio Version',
         botVersion)
         embed.addField(`Author`,
@@ -27,6 +28,7 @@ module.exports = class rio {
         embed.setThumbnail(`${message.author.avatarURL}`)
         embed.setFooter(`Requested by: ${message.author.tag}`)
         embed.setTimestamp()
+
 
         message.channel.send(embed);
         message.delete();
