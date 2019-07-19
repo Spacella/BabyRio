@@ -15,22 +15,47 @@ module.exports = class mcstatus {
         var url = `http://mcapi.us/server/status?ip=${ip}`;
         request(url, function(err, response, body) {
             if(err) {
+
             msg.channel.send(err);
+
             return msg.reply("Error getting Minecraft server stats...");
+
             }
   
             body = JSON.parse(body);
-            var status = `Server you mentioned is either __offline__ or you haven't entered a correct IP!`;
+
+            var status = `Server you mentioned is either __offline__ or you haven't entered a correct IP. :frowning:`;
+
             if(body.online) {
-            status = `IP: **${ip}**`;
-            if(body.players.now) {
-                status += `\nPeople Playing: **` + body.players.now + `**`;
+                let embed = new Discord.RichEmbed();
+
+                let duration = (body.duration)
+                let days = Math.floor(duration / 86400);
+                let hours = Math.floor(duration / 3600);
+                duration %= 3600;
+                let minutes = Math.floor(duration / 60);
+                let seconds = duration % 60;
+                seconds = seconds.toFixed(2);
+                
+                embed.setTitle(`Rio Server Info`)
+                embed.setFooter(`Requested by ${message.author.tag}`)
+                embed.setURL('http://mcapi.us')
+                embed.setTimestamp()
+                embed.setColor("F08080")
+                embed.addField(`IP:`,
+                `${ip}`)
+                embed.addField('Players: ',
+                 + body.players.now + `/` + body.players.max)
+                 embed.addField('Uptime: ',
+                 `Days: **${days}**\n Hours: **${hours}** \nMinutes: **${minutes}** \nSeconds: **${seconds}**`)
+
+                message.channel.send(embed)
+
             } else {
-                status += `\n*No one is playing right now`;
-            }
+                message.channel.send('We couldn\'t get the status of that server. :frowning:')
             }
   
-            message.channel.send(status);
+
             message.delete()
         });
     }
