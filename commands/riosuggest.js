@@ -9,13 +9,17 @@ module.exports = class suggestion {
 
     run(bot, message, args){
         let embed = new Discord.RichEmbed()
+
+        var command = args[0];
+        var suggestion = args.slice(1).join(" ");
+
          embed.setTitle(`Baby Rio Suggestion`)
          embed.setColor(0xF08080)
          embed.setDescription('A user has suggested a new feature for Baby Rio!')
          embed.setThumbnail(`${message.author.avatarURL}`)
          embed.addBlankField(true)
          embed.addField('**Suggestion**',
-         `${message.author.lastMessage}`)
+         `${suggestion}`)
          embed.addField('**Suggestion by:**',
          `<@${message.author.id}>`)
 

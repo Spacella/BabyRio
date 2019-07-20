@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const Minesweeper = require('discord.js-minesweeper');
 
 module.exports = class mines {
   constructor(){
@@ -9,7 +8,20 @@ module.exports = class mines {
   }
 
   run(bot, message, args){
-    const minesweeper = new Minesweeper();
-    minesweeper.start()
+    let spoilers = [
+      ":one:",
+      ":two:",
+      ":three:",
+      ":four:",
+      ":bomb:"
+    ]
+    let spoils = spoilers[Math.floor(Math.random() * spoilers.length)];
+    let embed = new Discord.RichEmbed();
+
+    embed.setTitle('Minesweeper')
+    embed.setDescription(`||${spoils}||||${spoils}||||${spoils}||||${spoils}||||${spoils}||\n||${spoils}||||${spoils}||||${spoils}||||${spoils}||||${spoils}||\n||${spoils}||||${spoils}||||${spoils}||||${spoils}||||${spoils}||\n||${spoils}||||${spoils}||||${spoils}||||${spoils}||||${spoils}||\n`)
+    embed.setTimestamp();
+
+    message.channel.send(embed)
   }
 }

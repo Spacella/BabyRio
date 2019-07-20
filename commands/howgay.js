@@ -19,7 +19,7 @@ module.exports = class howgay {
     if (!message.guild) return;
     if (!message.mentions.users.first()) return;
 
-    if (message.content === `${command}`) return message.channel.send('You need to mention someone. (You can mention yourself)')
+    if (message.content === `+gay`, `+howgay`) return message.channel.send('You need to mention someone. (You can mention yourself)')
     embed.setDescription(`${mentioned} is ${random}% gay :gay_pride_flag: `)
     embed.setColor(0xF08080)
 

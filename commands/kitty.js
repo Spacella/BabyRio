@@ -4,7 +4,7 @@ const snekfetch = require('snekfetch')
 
 module.exports = class kitty {
     constructor(){
-        this.name = 'ktties',
+        this.name = 'kitties',
         this.alias = ['cat', 'catto', 'kitten', 'kitty'],
         this.usage = 'kitties'
     }
