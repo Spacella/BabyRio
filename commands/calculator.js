@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const Math = require('mathjs')
+const Math = require('mathjs');
 
 module.exports = class calculator {
     constructor(){
@@ -19,7 +19,7 @@ module.exports = class calculator {
 
         } catch (error) {
 
-            return console.error(error)
+            return message.channel.send('Input a correct calculation. Example: **+calc 10+10**')
         }
 
         let embed = new Discord.RichEmbed();
