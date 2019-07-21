@@ -44,7 +44,11 @@ Displays the tom uneasy image
 ### +perhaps
 Displays the perhaps cow (ALIAS: +p)
 May change the alias or remove it
-  
+### +skin
+Shows your Minecraft Skin (ALIAS: +mcskin)
+### +calculator
+Will basically work as a calculator if i'm ever too lazy to load up google (ALIAS: +calc)
+
 ## Goli Network Help Commands
 ### +su
 Suggestion feature for the server.
@@ -86,10 +90,6 @@ Displays a help page for how to use "#+su" command.
 Shows a list of all the commands I will be working on adding
 ### +minesweeper
 Play a game of Minesweeper on Discord
-### +skin
-Shows your Minecraft Skin
-### +calculator
-Will basically work as a calculator if i'm ever too lazy to load up google
 
 ### A leveling up feature
 I will be slowly working to make a feature with the bot where it will allow the players in my discord server to level up, this will be in the same style as Mee6 Bot. My goal is to make a functioning bot that does everything that mee6, dyno, rythm, etcetera; can do.
