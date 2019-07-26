@@ -25,7 +25,7 @@ module.exports = class slap {
     var mentioned = args.slice(1).join(" ")
 
     embed.setDescription(`**<@${message.author.id}> slaps ${mentioned}**`)
-    embed.setColor(0xF08080)
+    embed.setColor("76b3fc")
     embed.setImage(`${gifs[slaps]}`)
 
     if (!message.guild) return;

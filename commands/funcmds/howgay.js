@@ -27,7 +27,7 @@ module.exports = class howgay {
     } else {
         
         mention.setDescription(`${mentioned} is ${random}% gay :gay_pride_flag:`)
-        mention.setColor("F08080")
+        mention.setColor("76b3fc")
 
         message.channel.send(mention)
     }}

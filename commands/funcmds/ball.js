@@ -42,7 +42,7 @@ module.exports = class ball {
         `${question}`)
         embed.addField('Answer:',
         `${eightball[ballargs]}`)
-        embed.setColor("F08080")
+        embed.setColor("76b3fc")
 
         message.channel.send(embed)
     }
