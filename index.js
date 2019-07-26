@@ -40,7 +40,7 @@ bot.on('guildMemberAdd', member => {
     if (member.guild.id === '505872328538718233') {
 
     embed.setAuthor("Goli Network's Official Discord!");
-    embed.setColor(0xF08080);
+    embed.setColor("76b3fc");
     embed.setDescription(`Welcome to Goli Network, <@${member.id}>! Please real all of our server rules and keep a positive attitude throughout the entire server. :heart: \nWe hope you have fun and enjoy your stay!\n \nLink your Discord -> Minecraft on \`golinetwork.online\` Version 1.13.2!`);
     embed.setImage("https://cdn.discordapp.com/attachments/568862020594565130/580826398193614858/GoliLogo.png");
     embed.setThumbnail(`${member.user.displayAvatarURL}`);
@@ -66,6 +66,7 @@ bot.on('guildMemberRemove', member => {
     embed.setAuthor("Member Left");
     embed.setDescription(`${member.user.tag} just left` + ` the server!`);
     embed.setThumbnail(`${member.user.displayAvatarURL}`);
+    embed.setColor("76b3fc")
 
     bot.channels.get("584340782673297458").send(embed);
     console.log(`${member.user.tag} Just left`);
