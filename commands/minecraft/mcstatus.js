@@ -41,7 +41,7 @@ module.exports = class mcstatus {
                 embed.setFooter(`Requested by ${message.author.tag}`)
                 embed.setURL('http://mcapi.us')
                 embed.setTimestamp()
-                embed.setColor("F08080")
+                embed.setColor("76b3fc")
                 embed.addField(`IP:`,
                 `${ip}`)
                 embed.addField('Players: ',
