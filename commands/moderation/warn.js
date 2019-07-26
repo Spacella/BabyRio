@@ -25,7 +25,7 @@ module.exports = class warn {
         } else {
 
             embed1.setColor("76b3fc")
-            embed1.setDescription('**You have been warned!** <:PanCop:589141466727841793>')
+            embed1.setDescription(`**You have been warned!, ${mentioned}** <:PanCop:589141466727841793>`)
             embed1.addField('Reason:',
             `${reason}`)
             embed1.addField('Warned by:',
@@ -42,7 +42,7 @@ module.exports = class warn {
             `${reason}`)
     
             bot.channels.get('602936602645233668').send(modlogs)
-            message.mentioned.send(embed1)
+            message.channel.send(embed1)
             message.delete();
         }
     }
