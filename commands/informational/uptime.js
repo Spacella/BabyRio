@@ -29,7 +29,7 @@ module.exports = class uptime {
             embed.addField('Seconds',
             `${seconds}`)
             embed.setThumbnail(`${message.author.avatarURL}`)
-            embed.setColor("F08080")
+            embed.setColor("76b3fc")
 
             message.channel.send(embed)
     }

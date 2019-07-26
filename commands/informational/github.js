@@ -11,7 +11,7 @@ module.exports = class github {
     let embed = new Discord.RichEmbed();
     embed.setAuthor('GitHub Pages')
     embed.setDescription('**Baby Rio GitHub Page:**\nhttps://github.com/Oribuin/BabyRio\n**Spacella GitLab Page:**\nhttps://gitlab.com/spacella/')
-    embed.setColor(0xF08080)
+    embed.setColor("76b3fc")
     embed.setThumbnail(`${message.author.avatarURL}`)
     embed.setTimestamp();
 

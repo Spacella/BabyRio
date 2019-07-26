@@ -13,7 +13,7 @@ module.exports = class avatar {
         embed.setDescription(`**Your Avatar**`)
         embed.setImage(`${message.author.avatarURL}`)
         embed.setTimestamp()
-        embed.setColor(0xF08080)
+        embed.setColor("76b3fc")
 
         message.channel.send(embed);
 

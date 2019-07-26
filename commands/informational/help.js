@@ -28,7 +28,7 @@ module.exports = class rio {
         `${bot.game}`)
         embed.addField('Status',
         `${bot.status}`)
-        embed.setColor(0xF08080)
+        embed.setColor("76b3fc")
         embed.setThumbnail(`${message.author.avatarURL}`)
         embed.setFooter(`Requested by: ${message.author.tag}`)
         embed.setTimestamp()

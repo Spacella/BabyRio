@@ -27,7 +27,7 @@ module.exports = class userinfo {
         `${message.author.presence.status}`)
         embed.addField('Game:',
         `${message.author.presence.game}`)
-        embed.setColor("F08080")
+        embed.setColor("76b3fc")
         embed.setThumbnail(`${message.author.avatarURL}`)
 
         message.channel.send(embed)

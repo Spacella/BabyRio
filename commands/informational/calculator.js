@@ -24,7 +24,7 @@ module.exports = class calculator {
 
         let embed = new Discord.RichEmbed();
 
-        embed.setColor("F08080")
+        embed.setColor("76b3fc")
         embed.setTitle('Rio\'s Math Class')
         embed.setDescription('**Symbols**: \n**+** (Addition)\n**-** (Subtraction)\n** * ** (Multiply)\n **/** (Divide)\n \nInput does not have the symbol in it?\nFormat: "**+calc 10+10**"')
         embed.addField('Input', `\`\`\`js\n${args[1]}\`\`\``)

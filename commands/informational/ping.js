@@ -19,7 +19,7 @@ module.exports = class ping {
             embed.addField('API Latency',
             `${Math.round(bot.ping)}ms`)
             embed.setThumbnail(`${message.author.avatarURL}`)
-            embed.setColor("F08080")
+            embed.setColor("76b3fc")
 
             message.channel.send(embed)
             message.delete();

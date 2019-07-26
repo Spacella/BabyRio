@@ -14,7 +14,7 @@ module.exports = class suggestion {
         var suggestion = args.slice(1).join(" ");
 
          embed.setTitle(`Baby Rio Suggestion`)
-         embed.setColor(0xF08080)
+         embed.setColor("76b3fc")
          embed.setDescription('A user has suggested a new feature for Baby Rio!')
          embed.setThumbnail(`${message.author.avatarURL}`)
          embed.addBlankField(true)

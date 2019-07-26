@@ -23,7 +23,7 @@ module.exports = class gserver {
         `${message.guild.region}`)
         embed.addField('AFK Channel:',
         `${message.guild.afkChannel}`)
-        embed.setColor(0xF08080)
+        embed.setColor("76b3fc")
         embed.setThumbnail(`${message.guild.iconURL}`)
         embed.setFooter(`Requested by: ${message.author.tag}`)
         embed.setTimestamp()
