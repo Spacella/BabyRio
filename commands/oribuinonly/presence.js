@@ -22,7 +22,7 @@ module.exports = class presence {
         embed.addField('Status',
         `${message.author.presence.status}`)
         if (message.author.id === '345406020450779149')
-        embed.setColor("F08080")
+        embed.setColor("76b3fc")
         embed.setThumbnail(`${message.author.avatarURL}`)
 
         if (message.author.id === '345406020450779149')

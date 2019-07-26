@@ -14,7 +14,7 @@ module.exports = class purge {
         var purged = args.slice(1).join(" ");
         //Embed
          embed.setTitle(`MESSAGES PURGED`)
-         embed.setColor(0xF08080)
+         embed.setColor("76b3fc")
          embed.setThumbnail(`${message.author.avatarURL}`)
          embed.addField('Amount Purged',
          `${purged}`)
