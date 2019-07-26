@@ -19,7 +19,7 @@ module.exports = class announcement {
         embed.setTimestamp()
         embed.setImage('https://cdn.discordapp.com/attachments/568862020594565130/580826398193614858/GoliLogo.png')
         embed.setThumbnail('https://cdn.discordapp.com/attachments/577491181697630244/602920909086392519/golilogo.png')
-        embed.setColor(0xF08080)
+        embed.setColor("76b3fc")
 
         if (message.author.id === '345406020450779149', '568919303580024862')
 

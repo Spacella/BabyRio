@@ -13,7 +13,7 @@ module.exports = class three {
     embed.setAuthor('Git Links')
     embed.setDescription('**Oribuin:** https://github.com/Oribuin/\n**Spacella:** https://gitlab.com/spacella/')
     embed.setImage('https://cdn.discordapp.com/attachments/568862020594565130/580826398193614858/GoliLogo.png')
-    embed.setColor(0xF08080)
+    embed.setColor("76b3fc")
 
     message.channel.send(embed) 
     message.delete();

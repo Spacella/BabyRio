@@ -18,7 +18,7 @@ module.exports = class Poll {
         embed.setFooter(`Poll by: ${message.author.tag}`)
         embed.setTimestamp()
         embed.setImage('https://cdn.discordapp.com/attachments/568862020594565130/580826398193614858/GoliLogo.png')
-        embed.setColor(0xF08080)
+        embed.setColor("76b3fc")
         embed.setThumbnail('https://cdn.discordapp.com/attachments/577491181697630244/602920909086392519/golilogo.png')
 
         if (message.member.hasPermission('MENTION_EVERYONE'))

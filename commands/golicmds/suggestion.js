@@ -19,7 +19,7 @@ module.exports = class suggestion {
         if (message.content === `${command}`) return message.reply('You need to provide a suggestion!').then(message.delete());
         
          embed.setTitle(`Upvote | Downvote`)
-         embed.setColor(0xF08080)
+         embed.setColor("76b3fc")
          embed.setDescription('Suggest features to our server with:\n `+su <suggestion>`')
          embed.setThumbnail(`${message.author.avatarURL}`)
          embed.addBlankField(true)
