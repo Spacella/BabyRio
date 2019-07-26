@@ -16,7 +16,7 @@ module.exports = class mainpage {
     if (message.content === `${command}`) {
 
     mainembed.setAuthor(`Baby Rio Help | Page: Main`);
-    mainembed.setColor("F08080");
+    mainembed.setColor("76b3fc");
     mainembed.setDescription('**Pages**\n \n`+helpfun` - Fun Commands\n`+helputil` - Utility Commands\n`+helpvc` - Voice Channel Commands\n`+helpgolimc` - Goli Network Commands\n`+helpmc` - MC Commands\n \n**Commands Loaded: 56**')
 
     message.channel.send(mainembed)

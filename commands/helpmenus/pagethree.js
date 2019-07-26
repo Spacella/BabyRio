@@ -13,7 +13,7 @@ module.exports = class pagethree {
     var command = args[0];
 
     page3embed.setAuthor(`Baby Rio Help | Page 3`);
-    page3embed.setColor("F08080");
+    page3embed.setColor("76b3fc");
     page3embed.setDescription('`+vc` - Allows Rio to Join your VC\n`+lvc` - Allows Rio to Leave your VC\n`+dhorn` - Plays Dixie Horn Sound\n  \n**Page 3/5 - Type **`+helpgolimc`** for next page!**')
 
         message.channel.send(page3embed)

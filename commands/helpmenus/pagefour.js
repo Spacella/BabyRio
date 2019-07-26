@@ -13,7 +13,7 @@ module.exports = class pagefour {
     var command = args[0];
 
     page4embed.setAuthor(`Baby Rio Help | Page 4`);
-    page4embed.setColor("F08080");
+    page4embed.setColor("76b3fc");
     page4embed.setDescription('`+br <bug>` - Report Bugs to Devs\n`+su <suggsetion`> - Suggest small features to Goli Network\n`+rules` - Server Rules\n  \n**Page 4/5 - Type **`+helpgolimc`** for next page!**')
 
         message.channel.send(page4embed)
