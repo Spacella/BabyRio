@@ -1,6 +1,6 @@
 {
   "name": "BabyRio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Baby Rio Bot | Helps out with Goli Network Discord",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,15 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.5.1",
+    "discord.js-minesweeper": "^1.0.4-b",
     "djs-commands": "^1.2.2",
-    "minecraft-api": "0.0.2",
-    "minecraft-skin": "^0.1.2"
+    "mathjs": "^6.0.3",
+    "node-fetch": "^2.6.0",
+    "opusscript": "0.0.6",
+    "random-puppy": "^1.1.0",
+    "request": "^2.88.0",
+    "snekfetch": "^4.0.4",
+    "util": "^0.12.1",
+    "youtube-audio-stream": "^0.3.1"
   }
 }
