@@ -17,15 +17,15 @@ module.exports = class mines {
     const mines = parseInt(args[3]);
 
     if (!rows) {
-    return message.channel.send(':warning: Please enter a number of rows.\n \nExample: `+mines 6 6 5`');
+    return message.channel.send(':warning: Please enter a number of rows. You must have a minimum of three. \n \nExample: `+mines 6 6 5`');
     }
 
     if (!columns) {
-      return message.channel.send(':warning: Please enter a number of columns.\n \nExample: `+mines 6 6 5`');
+      return message.channel.send(':warning: Please enter a number of columns. You must have a minimum of three. \n \nExample: `+mines 6 6 5`');
     }
 
     if (!mines) {
-      return message.channel.send(':warning: Please enter a number of mines.\n \nExample: `+mines 6 6 5`');
+      return message.channel.send(':warning: Please enter a number of mines. You must have a minimum of three. \n \nExample: `+mines 6 6 5`');
     }
 
     const minesweeper = new Minesweeper({ rows, columns, mines });
@@ -38,6 +38,6 @@ module.exports = class mines {
 
     return matrix
     ? message.channel.send(embed)
-    : message.channel.send(':warning: You have provided inavlid numbers');
+    : message.channel.send(':warning: You have provided inavlid numbers. You must have a minimum of three for each number.');
   }
 };
