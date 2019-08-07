@@ -2,9 +2,9 @@ const Discord = require("discord.js");
 
 module.exports = class Poll {
     constructor(){
-        this.name = 'poll',
+        this.name = 'createpoll',
         this.alias = [''],
-        this.usage = 'poll'
+        this.usage = 'createpoll'
     }
 
     run(bot, message, args){
@@ -23,7 +23,7 @@ module.exports = class Poll {
 
         if (message.member.hasPermission('MENTION_EVERYONE'))
                 
-        bot.channels.get("574122179038412810").send('Hey @here <:Bri_Wave:579035075102900229>').then(message.channel.send(embed).then(x=> x.react('597942179838558210').then(x.react('597942166517710868'))))
+        bot.channels.get("574122179038412810").send('Hey <@&598771429701451796> <:Bri_Wave:579035075102900229>').then(message.channel.send(embed).then(x=> x.react('597942179838558210').then(x.react('597942166517710868'))))
         message.delete()
     }
 }

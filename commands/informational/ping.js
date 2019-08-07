@@ -8,7 +8,7 @@ module.exports = class ping {
     }
 
     run(bot, message, args){
-        message.channel.send("Pinging....").then(m => {
+        message.channel.send("Pinging...").then(m => {
             let ping = m.createdTimestamp - message.createdTimestamp
             let embed = new Discord.RichEmbed();
 

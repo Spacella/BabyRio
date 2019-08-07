@@ -1,27 +1,43 @@
 const Discord = require('discord.js');
+const Minesweeper = require('discord.js-minesweeper');
 
 module.exports = class mines {
   constructor(){
       this.name = 'mines',
-      this.alias = ['minesweep'],
-      this.usage = 'mines'
+      this.alias = [''],
+      this.usage = 'mines';
   }
 
   run(bot, message, args){
-    let spoilers = [
-      ":one:",
-      ":two:",
-      ":three:",
-      ":four:",
-      ":bomb:"
-    ]
-    let spoils = spoilers[Math.floor(Math.random() * spoilers.length)];
     let embed = new Discord.RichEmbed();
 
-    embed.setTitle('Minesweeper')
-    embed.setDescription(`||${spoils}||||${spoils}||||${spoils}||||${spoils}||||${spoils}||\n||${spoils}||||${spoils}||||${spoils}||||${spoils}||||${spoils}||\n||${spoils}||||${spoils}||||${spoils}||||${spoils}||||${spoils}||\n||${spoils}||||${spoils}||||${spoils}||||${spoils}||||${spoils}||\n`)
-    embed.setTimestamp();
+    const command = args[0];
+    const rows = parseInt(args[1]);
+    const columns = parseInt(args[2]);
+    const mines = parseInt(args[3]);
 
-    message.channel.send(embed)
+    if (!rows) {
+    return message.channel.send(':warning: Please enter a number of rows.\n \nExample: `+mines 6 6 5`');
+    }
+
+    if (!columns) {
+      return message.channel.send(':warning: Please enter a number of columns.\n \nExample: `+mines 6 6 5`');
+    }
+
+    if (!mines) {
+      return message.channel.send(':warning: Please enter a number of mines.\n \nExample: `+mines 6 6 5`');
+    }
+
+    const minesweeper = new Minesweeper({ rows, columns, mines });
+    const matrix = minesweeper.start();
+
+    embed.setColor("76b3fc")
+    embed.setDescription(`${matrix}`)
+    embed.setAuthor('Minesweeper')
+    embed.setTimestamp()
+
+    return matrix
+    ? message.channel.send(embed)
+    : message.channel.send(':warning: You have provided inavlid numbers');
   }
-}
+};

@@ -13,7 +13,7 @@ module.exports = class slap {
     constructor(){
         this.name = 'slap',
         this.alias = ['hit'],
-        this.usage = 'slap'
+        this.usage = 'slap';
     }
 
     run(bot, message, args){
@@ -22,17 +22,17 @@ module.exports = class slap {
     let embed = new Discord.RichEmbed();
 
     var command = args[0];
-    var mentioned = args.slice(1).join(" ")
+    var mentioned = args.slice(1).join(" ");
 
-    embed.setDescription(`**<@${message.author.id}> slaps ${mentioned}**`)
-    embed.setColor("76b3fc")
-    embed.setImage(`${gifs[slaps]}`)
+    embed.setDescription(`**<@${message.author.id}> slaps ${mentioned}**`);
+    embed.setColor("76b3fc");
+    embed.setImage(`${gifs[slaps]}`);
 
     if (!message.guild) return;
 
     if (message.mentions.members.first()) {
-        message.channel.send(embed)
+        message.channel.send(embed);
     } else {
-        message.channel.send('You need to mention to slap.')
+        message.channel.send('You need to mention to slap.');
     }}
-}
+};

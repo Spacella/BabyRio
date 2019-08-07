@@ -21,6 +21,7 @@ module.exports = class ban {
         let command = args[0];
         let mentioned = args.slice(1).join(" ");
         let reason = args.slice(2).join(" ");
+        let days = args.slice(3);
         
 
         banned.setAuthor('Member Banned');
@@ -32,7 +33,12 @@ module.exports = class ban {
         banned.addField('Banned by:',
         `<${message.author.id}>`);
 
-        message.member.ban()
+        if (message.member.roles.has('555414882636267540'))
+        message.member.removeRole('555414882636267540');
+        if (message.member.roles.has('598771429701451796'))
+        message.member.removeRole('598771429701451796')
+
+        message.member.ban(`${reason}`)
         .then(() => {
 
         message.channel.send(banned);

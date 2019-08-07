@@ -11,8 +11,6 @@ module.exports = class warn {
         let embed1 = new Discord.RichEmbed();
         let modlogs = new Discord.RichEmbed();
 
-        if (!message.guild) return;
-        if (message.author.id === ['345406020450779149', '568919303580024862', '205408309019148289'])
 
         var command = args[0];
         var mentioned = args[1];
@@ -40,10 +38,18 @@ module.exports = class warn {
             `${mentioned}`)
             modlogs.addField('Reason',
             `${reason}`)
-    
+
+            if (message.author.id === '345406020450779149', '568919303580024862', '205408309019148289') return
+
+            try {
             bot.channels.get('602936602645233668').send(modlogs)
             message.channel.send(embed1)
             message.delete();
+
+            } catch(error) {
+
+            message.channel.send('You do not have permission to do this.').then(message.delete());
+            }
         }
     }
 }

@@ -20,8 +20,7 @@ module.exports = class presence {
         embed.addField('Type:',
         `${type}`)
         embed.addField('Status',
-        `${message.author.presence.status}`)
-        if (message.author.id === '345406020450779149')
+        `${bot.user.presence.status}`)
         embed.setColor("76b3fc")
         embed.setThumbnail(`${message.author.avatarURL}`)
 

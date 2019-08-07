@@ -31,7 +31,7 @@ module.exports = class mcskin {
                 embed.setColor("76b3fc")
                 embed.setImage(`https://minotar.net/armor/body/${username}/100.png`)
                 embed.setDescription(`Gained the skin of ${username}.`)
-                embed.setThumbnail(`https://minotar.net/avatar/${username}`)
+                embed.setThumbnail(`https://minotar.net/cube/${username}/100.png`)
 
                 message.channel.send(embed)
 

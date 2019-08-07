@@ -13,7 +13,7 @@ module.exports = class rio {
         
         embed.setTitle('-=[Baby Rio Bot]=-')
         embed.setAuthor('Rio Info', `${bot.user.avatarURL}`)
-        embed.setDescription('**Type** `+cmds` **for the command list**')
+        embed.setDescription('**Type** `+help` **for the command list**')
         embed.addField('Baby Rio Version',
         botVersion)
         embed.addField(`Author`,
