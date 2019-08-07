@@ -18,8 +18,8 @@ Shows Bot Ping & API Latency. (ALIAS: +latency)
 ### +avatar
 Shows your avatar. (ALIAS: +ava)
 ### +howgay <@someone>
-Shows a random number from 1-100 of how "gay" you are. (ALIAS: +)
-###  +ball
+Shows a random number from 1-100 of how "gay" you are. (ALIAS: +gay)
+### +ball
 Acts as an 8 Ball. (ALIAS: <NONE>)
 ### +perhaps
 Displays the perhaps cow. (ALIAS: +p)
@@ -48,7 +48,9 @@ May change the alias or remove it
 Shows your Minecraft Skin (ALIAS: +mcskin)
 ### +calculator
 Will basically work as a calculator if i'm ever too lazy to load up google (ALIAS: +calc)
-
+### +minesweeper
+Play a game of Minesweeper on Discord
+  
 ## Goli Network Help Commands
 ### +su
 Suggestion feature for the server.
@@ -88,8 +90,6 @@ Displays a help page for how to use "#+su" command.
 
 ## Coming Soon
 Shows a list of all the commands I will be working on adding
-### +minesweeper
-Play a game of Minesweeper on Discord
 
 ### A leveling up feature
 I will be slowly working to make a feature with the bot where it will allow the players in my discord server to level up, this will be in the same style as Mee6 Bot. My goal is to make a functioning bot that does everything that mee6, dyno, rythm, etcetera; can do.
